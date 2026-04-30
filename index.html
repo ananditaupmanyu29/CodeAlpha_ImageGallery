@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Vision Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Login Form -->
+    <header class="top-header">
+        <h2>Sign In</h2>
+
+        <form id="loginForm">
+
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Enter Your Name">
+                <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="phone" placeholder="Enter 10-digit Number">
+                <small class="error" id="phoneError"></small>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Enter Your Email">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</header>
+
+    <section class="hero">
+        <h1>Creative Vision Gallery</h1>
+        <p>Explore breathtaking collections of Nature, Wildlife, and Urban Photography crafted to inspire creativity.</p>
+    </section>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button class="active" onclick="filterImages('all', event)">All</button>
+        <button onclick="filterImages('nature', event)">Nature</button>
+        <button onclick="filterImages('animal', event)">Animals</button>
+        <button onclick="filterImages('city', event)">City</button>
+        <button onclick="filterImages('flower', event)">Flower</button>
+        <button onclick="filterImages('food', event)">Food</button>
+        <button onclick="filterImages('car', event)">Cars</button>
+    </div>
+
+    <!-- Gallery -->
+<div class="gallery">
+    <div class="gallery-item nature" onclick="openLightbox(0)">
+        <img src="https://thumbs.dreamstime.com/b/autumn-nature-landscape-colorful-forest-autumn-nature-landscape-colorful-forest-morning-sunlight-131400332.jpg">
+        <div class="overlay"><h3>Nature</h3><p>Forest</p></div>
+    </div>
+
+    <div class="gallery-item animal" onclick="openLightbox(1)">
+        <img src="https://images.unsplash.com/photo-1508817628294-5a453fa0b8fb?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2lsZCUyMGFuaW1hbHxlbnwwfHwwfHx8MA%3D%3D">
+        <div class="overlay"><h3>Wildlife</h3><p>Animals</p></div>
+    </div>
+
+    <div class="gallery-item city" onclick="openLightbox(2)">
+        <img src="https://images.unsplash.com/photo-1528526427922-e0a1f0e24627?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YW1lcmljYW4lMjBzdHJlZXR8ZW58MHx8MHx8fDA%3D">
+        <div class="overlay"><h3>City</h3><p>Day & Night</p></div>
+    </div>
+
+    <div class="gallery-item flower" onclick="openLightbox(3)">
+        <img src="https://i.pinimg.com/236x/8f/de/14/8fde1410bdcce24e07d518b3a34de108.jpg">
+        <div class="overlay"><h3>Beauty</h3><p>Flower</p></div>
+    </div>
+
+    <div class="gallery-item food" onclick="openLightbox(4)">
+        <img src="https://img.freepik.com/free-photo/top-view-fast-food-mix-mozzarella-sticks-club-sandwich-hamburger-mushroom-pizza-caesar-shrimp-salad-french-fries-ketchup-mayo-cheese-sauces-table_141793-3998.jpg?semt=ais_hybrid&w=740&q=80">
+        <div class="overlay"><h3>Food</h3><p>Street Food</p></div>
+    </div>
+
+    <div class="gallery-item car" onclick="openLightbox(5)">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/023/980/938/small/close-up-red-luxury-car-on-black-background-with-copy-space-photo.jpg">
+        <div class="overlay"><h3>Automobile</h3><p>Car & Bike</p></div>
+    </div>
+</div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <footer>
+        © 2025 Creative Vision Gallery | Designed for Professional Showcase
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
