@@ -1,7 +1,6 @@
 let currentIndex = 0;
 const images = document.querySelectorAll(".gallery-item img");
 
-// Filter
 function filterImages(category, event){
     const items = document.querySelectorAll(".gallery-item");
     const buttons = document.querySelectorAll(".filters button");
@@ -18,7 +17,6 @@ function filterImages(category, event){
     });
 }
 
-// Lightbox
 function openLightbox(index){
     currentIndex = index;
     document.getElementById("lightbox").style.display="flex";
@@ -37,7 +35,6 @@ function changeImage(step){
     document.getElementById("lightbox-img").src = images[currentIndex].src;
 }
 
-// Form Validation
 document.getElementById("loginForm").addEventListener("submit", function(e){
     e.preventDefault();
 
@@ -55,17 +52,14 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         document.getElementById("nameError").innerText = "Name is required";
         valid = false;
     }
-
     if(!/^[0-9]{10}$/.test(phone)){
         document.getElementById("phoneError").innerText = "Enter valid 10-digit number";
         valid = false;
     }
-
     if(!email.includes("@")){
         document.getElementById("emailError").innerText = "Enter valid email with @";
         valid = false;
     }
-
     if(valid){
         alert("Form Submitted Successfully!");
     }
