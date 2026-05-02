@@ -52,14 +52,17 @@ document.getElementById("loginForm").addEventListener("submit", function(e){
         document.getElementById("nameError").innerText = "Name is required";
         valid = false;
     }
+
     if(!/^[0-9]{10}$/.test(phone)){
         document.getElementById("phoneError").innerText = "Enter valid 10-digit number";
         valid = false;
     }
+
     if(!email.includes("@")){
         document.getElementById("emailError").innerText = "Enter valid email with @";
         valid = false;
     }
+
     if(valid){
         alert("Form Submitted Successfully!");
     }
