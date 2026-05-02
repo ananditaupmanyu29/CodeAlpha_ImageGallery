@@ -196,6 +196,76 @@ body{
     padding:20px;
 }
 
+.hero02{
+    height:60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://img.freepik.com/free-photo/mountain-range-body-water_53876-139760.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero03{
+    height:60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://wallpapercave.com/wp/wp7259723.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero04{
+    height:60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://www.pixelstalk.net/wp-content/uploads/image11/Rose-garden-wallpaper-4K-with-a-variety-of-roses-in-different-colors.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero05{
+    height:60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://png.pngtree.com/thumb_back/fh260/background/20230527/pngtree-an-arrangement-of-various-indian-food-image_2683809.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.hero06{
+    height:60vh;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+    url('https://i.pinimg.com/236x/4b/f8/9e/4bf89e64d324011f2ebd3564ee1165e0.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
 .filters{
     text-align:center;
     margin:30px 0;
