@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero03">
+        <h1>Animal Gallery</h1>
+        <p>Explore Wild Animal</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('herbivores', event)">Herbivores</button>
+        <button onclick="filterImages('carnivorous', event)">Carnivorous</button>
+        <button onclick="filterImages('omnivorous', event)">Omnivorous</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item animal herbivores" onclick="openLightbox(0)">
+            <img src="https://cdn.antaranews.com/cache/1200x800/2017/09/20170928giant-panda-003.jpg">
+            <div class="overlay"><h3>Panda</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(1)">
+            <img src="https://nywolf.org/wp-content/uploads/2026/02/DSC01712-1-scaled.jpg">
+            <div class="overlay"><h3>Wolf</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(2)">
+            <img src="https://forestryandland.gov.scot/media/235nnjjg/red_squirrel_55.jpg?&format=webp&quality=72">
+            <div class="overlay"><h3>Squirrel</h3></div>
+        </div>
+
+        <div class="gallery-item animal herbivores" onclick="openLightbox(3)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/066_Chital_in_Ranthambore_National_Park_Photo_by_Giles_Laurent.jpg">
+            <div class="overlay"><h3>Dear</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(4)">
+            <img src="https://thumbs.dreamstime.com/b/sri-lankan-leopard-panthera-pardus-kotiya-big-spotted-cat-lying-tree-nature-habitat-yala-national-park-sri-lanka-67952131.jpg">
+            <div class="overlay"><h3>Leopard</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(5)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv4lcr2csRX-XHPq4A-Z3lY2hhfYkNWCR7gw&s">
+            <div class="overlay"><h3>Raccoon</h3></div>
+        </div>
+
+        <div class="gallery-item animal herbivores" onclick="openLightbox(6)">
+            <img src="https://www.activewild.com/wp-content/uploads/2021/12/Zebra.jpg">
+            <div class="overlay"><h3>Zebra</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(7)">
+            <img src="https://cdn.britannica.com/84/198884-050-A37B8971/crocodile-Nile-swath-one-sub-Saharan-Africa-Madagascar.jpg">
+            <div class="overlay"><h3>Crocodile</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(8)">
+            <img src="https://www.thoughtco.com/thmb/J9YRAutFb3iOpah1kQAnhGH5RJI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/brownbearGE-5797a5015f9b58461f27a598.jpg">
+            <div class="overlay"><h3>Bear</h3></div>
+        </div>
+
+
+        <div class="gallery-item animal herbivores" onclick="openLightbox(9)">
+            <img src="https://sustainabletravel.org/wp-content/uploads/Blog-Image-Elephants-Together-1200x675-1.webp">
+            <div class="overlay"><h3>Elephant</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(10)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2POnloHEwqa74V2GiSu_KUWVS6UXEHL-bGg&s">
+            <div class="overlay"><h3>Lion</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(11)">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*">
+            <div class="overlay"><h3>Dog</h3></div>
+        </div>
+
+        <div class="gallery-item animal herbivores" onclick="openLightbox(12)">
+            <img src="https://lh7-us.googleusercontent.com/f-zhn1fVem_NoW9ELOGQ21EZeHbdNLfKw3tfFblttScX3olF8qtHU-Xmc9JfAqueBmd-8c7DBXjwXJ4sRM8VJ1ZEBqXT7dQ-UztmVkWrDaOIfWSFzkua19JGC443paSjvYud9-tmv4_V-72GRA88TIY">
+            <div class="overlay"><h3>Horse</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(13)">
+            <img src="https://earthsky.org/upl/2026/01/red-fox-snow_Cody-Boileau_unsplash-1-scaled-e1767987110644.jpg">
+            <div class="overlay"><h3>Fox</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(14)">
+            <img src="https://m.media-amazon.com/images/I/61twjkz47bL._AC_UF894,1000_QL80_.jpg">
+            <div class="overlay"><h3>Hen</h3></div>
+        </div>
+
+        <div class="gallery-item animal herbivores" onclick="openLightbox(15)">
+            <img src="https://www.humaneworld.org/sites/default/files/styles/sa_social_media_facebook/public/2019/03/rabbit-475261_0.jpg?h=c855054e&itok=DT6uMeh9">
+            <div class="overlay"><h3>Rabbit</h3></div>
+        </div>
+
+        <div class="gallery-item animal carnivorous" onclick="openLightbox(16)">
+            <img src="https://files.nc.gov/nc-wildlife/styles/event_image/public/images/2025-06/Bald-Eagle-USFWS_r.png?VersionId=84tQO77XL_X.Q.2QidvrJqUrq8V01rIt&itok=0ktovZ_G">
+            <div class="overlay"><h3>Eagle</h3></div>
+        </div>
+
+        <div class="gallery-item animal omnivorous" onclick="openLightbox(17)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz7Tn2RWnZTUodU75shK6AmbtSXD5pFQDs9Q&s">
+            <div class="overlay"><h3>Rat</h3></div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+    <script src="java.js"></script>
+</body>
+</html>
