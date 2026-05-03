@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero02">
+        <h1>Nature Gallery</h1>
+        <p>Explore Beautiful Nature</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('forest', event)">Forest</button>
+        <button onclick="filterImages('mountain', event)">Mountain</button>
+        <button onclick="filterImages('beach', event)">Beach</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item nature forest" onclick="openLightbox(0)">
+            <img src="https://www.treehugger.com/thmb/dTQTeid6GAoqHgCffNjHZkQRBEs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/lake-to-sky-1299538498-fffdaedc728148ecae844a38072bf5c2.jpg">
+            <div class="overlay"><h3>Pine</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(1)">
+            <img src="https://www.worldatlas.com/r/w1200/upload/33/4c/3d/shutterstock-413094751.jpg">
+            <div class="overlay"><h3>Desert</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(2)">
+            <img src="https://thehobbykraze.com/wp-content/uploads/2021/02/Beach-Types-Around-the-World-948x628.jpg">
+            <div class="overlay"><h3>Tropical</h3><p>Beach</p></div>
+        </div>
+
+        <div class="gallery-item nature forest" onclick="openLightbox(3)">
+            <img src="https://cdn7.dissolve.com/p/D869_43_211/D869_43_211_1200.jpg">
+            <div class="overlay"><h3>Deciduous</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(4)">
+            <img src="https://media.istockphoto.com/id/2165902707/photo/the-green-mountains-from-bolton-valley-resort.jpg?s=612x612&w=0&k=20&c=Kt8WI9q8G9pPX31_YcLsTh2mHAvaMVT2_ZeWts6c2-M=">
+            <div class="overlay"><h3>Green</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(5)">
+            <img src="https://i0.wp.com/www.embracethejourneytravel.com/wp-content/uploads/2023/06/Different-Types-of-Beaches1.jpeg?w=725&h=542">
+            <div class="overlay"><h3>Sandy</h3><p>Beach</p></div>
+        </div>
+
+        <div class="gallery-item nature forest" onclick="openLightbox(6)">
+            <img src="https://cdn.zmescience.com/wp-content/uploads/2017/01/5225638554_cf300d91e4_b.jpg">
+            <div class="overlay"><h3>Evergreen</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(7)">
+            <img src="https://cdn.zmescience.com/wp-content/uploads/2017/05/Mount_Everest_as_seen_from_Drukair2_PLW_edit.jpg">
+            <div class="overlay"><h3>Snow</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(8)">
+            <img src="https://img.freepik.com/free-photo/beautiful_1203-2633.jpg?semt=ais_hybrid&w=740&q=80">
+            <div class="overlay"><h3>Island</h3><p>Beach</p></div>
+        </div>
+
+        
+         <div class="gallery-item nature forest" onclick="openLightbox(9)">
+            <img src="https://discovery.sndimg.com/content/dam/images/discovery/fullset/2021/9/7/GettyImages-1154630782.jpg.rend.hgtvcom.1280.960.suffix/1631047746795.jpeg">
+            <div class="overlay"><h3>Mangrove</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(10)">
+            <img src="https://www.visitgrandcounty.com/wp-content/uploads/2023/09/Rocky_Mountain_NP_Hero-2.png">
+            <div class="overlay"><h3>Rocky</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(11)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8uQV37J5kzK96WhcLPfUZiWzEWjmOywYZ5g&s">
+            <div class="overlay"><h3>Subset</h3><p>Beach</p></div>
+        </div>
+
+        <div class="gallery-item nature forest" onclick="openLightbox(12)">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/e5/79/50/penglipuran-bamboo-forest.jpg?w=1200&h=1200&s=1">
+            <div class="overlay"><h3>Bamboo</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(13)">
+            <img src="https://www.kofastudy.com/wp-content/uploads/2022/03/volcanic-eruption.webp">
+            <div class="overlay"><h3>Volcanic</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(14)">
+            <img src="https://avianreport.com/wp-content/uploads/2018/04/Untitled-2_optimized.jpg">
+            <div class="overlay"><h3>Rocky</h3><p>Beach</p></div>
+        </div>
+
+        <div class="gallery-item nature forest" onclick="openLightbox(15)">
+            <img src="https://www.sciencing.com/sciencing/tropical-forest-adaptations-plants-animals-8514102/4ab4ba57746641d3a74502ebd1fc95dd.jpg">
+            <div class="overlay"><h3>Tropical</h3><p>Forest</p></div>
+        </div>
+
+        <div class="gallery-item nature mountain" onclick="openLightbox(16)">
+            <img src="https://thumbs.dreamstime.com/b/babin-zub-stara-planina-serbia-peak-mountain-massif-south-eastern-34910254.jpg">
+            <div class="overlay"><h3>Hill</h3><p>Mountain</p></div>
+        </div>
+
+        <div class="gallery-item nature beach" onclick="openLightbox(17)">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/26/98/1a/palm-beach-aruba.jpg?w=1200&h=1200&s=1">
+            <div class="overlay"><h3>Palm</h3><p>Beach</p></div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
