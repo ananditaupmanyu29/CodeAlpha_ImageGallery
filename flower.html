@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero04">
+        <h1>Flower Gallery</h1>
+        <p>Exploring Nature Creation</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('rose', event)">Rose</button>
+        <button onclick="filterImages('sunflower', event)">Sunflower</button>
+        <button onclick="filterImages('lotus', event)">Lotus</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item flower rose" onclick="openLightbox(0)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ63LkMwIEpMi0NJnPQRXDCyz41__erUowLvw&s">
+            <div class="overlay"><h3>Red</h3><p>Rose</p></div>        
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(1)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuZymczWSZWBOOP9gN_HbsNI84Nu43vd51ig&s">
+            <div class="overlay"><h3>Yellow</h3><p>Sunflower</p></div>        
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(2)">
+            <img src="https://windflowerflorist.com/cdn/shop/articles/Main_-_27-03-2025_18-15-22_7cb04cb2-2b0c-4721-a863-648dfb3155de_1600x.jpg?v=1771922633">
+            <div class="overlay"><h3>Purple</h3><p>Lotus</p></div>        
+        </div>
+
+        <div class="gallery-item flower rose" onclick="openLightbox(3)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM49NpTae0rAau7F2Y5a6qqM1HowovXUtRAA&s">
+            <div class="overlay"><h3>Blue</h3><p>Rose</p></div>        
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(4)">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/velvet-queen-sunflower-royalty-free-image-1755012429.pjpeg?crop=0.612xw:0.918xh;0.126xw,0.0816xh">
+            <div class="overlay"><h3>Red & Yellow</h3><p>Sunflower</p></div>        
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(5)">
+            <img src="https://indiangardens.in/cdn/shop/files/Code8_1ef40fd4-1046-4bfa-8447-3e7e541ca217.jpg?v=1762347075&width=416">
+            <div class="overlay"><h3>White</h3><p>Lotus</p></div>        
+        </div>
+
+        <div class="gallery-item flower rose" onclick="openLightbox(6)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScK8VX-ZTLvWOb63snyFghul_F8eMCfAuCjA&s">
+            <div class="overlay"><h3>Yellow</h3><p>Rose</p></div>        
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(7)">
+            <img src="https://www.epicgardening.com/wp-content/uploads/2023/09/Red-sunflower-variety-growing-in-garden-with-red-petals.jpg">
+            <div class="overlay"><h3>Red</h3><p>Sunflower</p></div>        
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(8)">
+            <img src="https://www.allthatgrows.in/cdn/shop/files/DoubleRosePinkLotusBulbs.jpg?v=1750314020&width=1080">
+            <div class="overlay"><h3>Pink</h3><p>Lotus</p></div>  
+        </div>
+
+
+        <div class="gallery-item flower rose" onclick="openLightbox(9)">
+            <img src="https://m.media-amazon.com/images/I/51S00P8BXeL._AC_UF1000,1000_QL80_.jpg">
+            <div class="overlay"><h3>Pink</h3><p>Rose</p></div>
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(10)">
+            <img src="https://bearcreekfarm.com/cdn/shop/products/WHITE_SUN.jpg?v=1638472897&width=3024">
+            <div class="overlay"><h3>White</h3><p>Sunflower</p></div>
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(11)">
+            <img src="https://thumbs.dreamstime.com/b/blooming-blue-lotus-flower-floating-tranquil-water-surface-peaceful-natural-setting-serene-rests-gracefully-calm-399920238.jpg">
+            <div class="overlay"><h3>Blue</h3><p>Lotus</p></div>        
+        </div>
+
+        <div class="gallery-item flower rose" onclick="openLightbox(12)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9voUaLXX695aK7yDeyInzmYfegQkozrYW_Q&s">
+            <div class="overlay"><h3>Purple</h3><p>Rose</p></div>        
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(13)">
+            <img src="https://nagelglads.com/cdn/shop/files/MF13578_945-TL_WM_325c8460-960c-4418-93ba-93f112cd4e5e.jpg?v=1747609471">
+            <div class="overlay"><h3>Orange</h3><p>Sunflower</p></div>
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(14)">
+            <img src="https://thumbs.dreamstime.com/b/red-lotus-flowers-bloom-gracefully-surface-calm-water-their-bright-petals-contrasting-vast-green-leaves-around-them-320992336.jpg">
+            <div class="overlay"><h3>Red</h3><p>Lotus</p></div>        
+        </div>
+
+        <div class="gallery-item flower rose" onclick="openLightbox(15)">
+            <img src="https://www.thespruce.com/thmb/5nHzhOl8vxNR2qmYQj-3tawjzFI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Orangeroses-GettyImages-580827975-59480b055f9b58d58ac3d7f0.jpg">
+            <div class="overlay"><h3>Orange</h3><p>Rose</p></div>        
+        </div>
+
+        <div class="gallery-item flower sunflower" onclick="openLightbox(16)">
+            <img src="https://cdn.mos.cms.futurecdn.net/v2/t:0,l:200,cw:1200,ch:1200,q:80,w:1200/se3SAKsagX8K2GRjE2gTPm.jpg">
+            <div class="overlay"><h3>Brown</h3><p>Sunflower</p></div>        
+        </div>
+
+        <div class="gallery-item flower lotus" onclick="openLightbox(17)">
+            <img src="https://images.stockcake.com/public/4/2/4/424fbed3-9b57-4d75-bf56-7d2c9ce1abaf_large/serene-lotus-blossoms-stockcake.jpg">
+            <div class="overlay"><h3>Peach</h3><p>Lotus</p></div>        
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
