@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero01">
+        <h1>City Gallery</h1>
+        <p>Exploring Urban Life</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('skyscraper', event)">Skyscrapers</button>
+        <button onclick="filterImages('street', event)">Street View</button>
+        <button onclick="filterImages('night', event)">Night View</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item city skyscraper" onclick="openLightbox(0)">
+            <img src="https://cdn.britannica.com/98/94398-050-FBE19E2C/Skyscrapers-Singapore.jpg">
+            <div class="overlay"><h3>Singapore</h3><p>Skyscrapers</p></div>
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(1)">
+            <img src="https://images.unsplash.com/photo-1468136020796-0eec5226a897?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3RyZWV0JTIwdmlld3xlbnwwfHwwfHx8MA%3D%3D">
+            <div class="overlay"><h3>London</h3><p>Street</p></div>
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(2)">
+            <img src="https://www.leisure-italy.com/wp-content/uploads/2019/07/Rome-by-night-1.jpg">
+            <div class="overlay"><h3>Rome</h3><p>Night</p></div>        
+        </div>
+
+        <div class="gallery-item city skyscraper" onclick="openLightbox(3)">
+            <img src="https://t3.ftcdn.net/jpg/00/52/14/94/360_F_52149427_zpSBvXruuUbDlrWvrF3d4Z8Pp83OI788.jpg">
+            <div class="overlay"><h3>New York City</h3><p>Skyscrapers</p></div>        
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(4)">
+            <img src="https://c0.wallpaperflare.com/preview/585/771/736/street-wet-wet-street-street-view.jpg">
+            <div class="overlay"><h3>Paris</h3><p>Street</p></div>
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(5)">
+            <img src="https://thumbs.dreamstime.com/b/berlin-skyline-tv-tower-night-germany-aerial-view-famous-alexanderplatz-dramatic-cloudscape-twilight-blue-59634582.jpg">
+            <div class="overlay"><h3>Berlin</h3><p>Night</p></div>        
+        </div>
+
+        <div class="gallery-item city skyscraper" onclick="openLightbox(6)">
+            <img src="https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg?semt=ais_hybrid&w=740&q=80">
+            <div class="overlay"><h3>Shanghai</h3><p>Skyscrapers</p></div>        
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(7)">
+            <img src="https://c8.alamy.com/comp/2PPJNBF/scenic-street-and-skyscrapers-of-new-york-city-evening-view-2PPJNBF.jpg">
+            <div class="overlay"><h3>Las Vegas</h3><p>Street</p></div>        
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(8)">
+            <img src="https://media.istockphoto.com/id/108350592/photo/cityscape-at-twilight-birds-eye-view.jpg?s=612x612&w=0&k=20&c=CYC-0vGJ8n-aGNHmkTNi5UiaGW65RUz_S4Sp_O1qJok=">
+            <div class="overlay"><h3>Moscow</h3><p>Night</p></div>        
+        </div>
+
+        
+        <div class="gallery-item city skyscraper" onclick="openLightbox(9)">
+            <img src="https://cdn.britannica.com/37/135437-050-A12461CC/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.jpg">
+            <div class="overlay"><h3>Dubai</h3><p>Skyscrapers</p></div>
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(10)">
+            <img src="https://images.contentstack.io/v3/assets/blt06f605a34f1194ff/blt899653e363334f49/67f66eee617c77bef7562aa8/koreanstyle-house-4764298-HEADER_MOBILE.jpg?fit=crop&disable=upscale&auto=webp&quality=60&crop=smart">
+            <div class="overlay"><h3>Seoul</h3><p>Street</p></div>
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(11)">
+            <img src="https://www.themacleay.com/wp-content/uploads/2016/08/If-you-like-a-good-view-then-heres-a-couple-places-you-need-to-check-out_487_6040471_0_14108963_500.jpg">
+            <div class="overlay"><h3>Sydney</h3><p>Night</p></div>        
+        </div>
+
+        <div class="gallery-item city skyscraper" onclick="openLightbox(12)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/HK_Bank_of_China_Tower_2008_%282%29.jpg">
+            <div class="overlay"><h3>Hong Kong</h3><p>Skyscrapers</p></div>        
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(13)">
+            <img src="https://sethlui.com/wp-content/uploads/2016/01/best-bangkok-street-foods-7780-800x533.jpg">
+            <div class="overlay"><h3>Bangkok</h3><p>Street</p></div>
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(14)">
+            <img src="https://thumbs.dreamstime.com/b/night-view-bosphorus-bridge-istanbul-turkey-long-exposure-sea-clouds-night-view-bosphorus-bridge-istanbul-turkey-160685060.jpg">
+            <div class="overlay"><h3>Istanbul</h3><p>Night</p></div>        
+        </div>
+
+        <div class="gallery-item city skyscraper" onclick="openLightbox(15)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Tokyo_Skytree_2014_%E2%85%A2.jpg">
+            <div class="overlay"><h3>Tokyo</h3><p>Skyscrapers</p></div>        
+        </div>
+
+        <div class="gallery-item city street" onclick="openLightbox(16)">
+            <img src="https://images.travelandleisureasia.com/wp-content/uploads/sites/2/2019/07/Connaught-Place-Vehicle-Free-Zone.jpg?tr=w-1200,q-60">
+            <div class="overlay"><h3>Delhi</h3><p>Street</p></div>        
+        </div>
+
+        <div class="gallery-item city night" onclick="openLightbox(17)">
+            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/toronto/toronto_skyline_night_mvrkle_JpPwVBtCso0_unsplash_262598b3-bee1-4cc0-a5f5-80e70e43d001.jpg">
+            <div class="overlay"><h3>Toranto</h3><p>Night</p></div>        
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
