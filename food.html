@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero05">
+        <h1>Food Gallery</h1>
+        <p>Exploring Street food Variety</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('southindian', event)">South Indian</button>
+        <button onclick="filterImages('northindian', event)">North Indian</button>
+        <button onclick="filterImages('fastfood', event)">Fast Food</button>
+        <button onclick="filterImages('sweet', event)">Sweets</button>
+
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item food southindian" onclick="openLightbox(0)">
+            <img src="https://sukhis.com/app/uploads/2022/04/image1-6-1024x684.jpg">
+            <div class="overlay"><h3>Idli</h3><p>South Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food northindian" onclick="openLightbox(1)">
+            <img src="https://floweraura-blog-img.s3.ap-south-1.amazonaws.com/cake-blog-23/chole-bhature-famous-food-of-delhi.jpg">
+            <div class="overlay"><h3>Chole Bhature</h3><p>North Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food fastfood" onclick="openLightbox(2)">
+            <img src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?semt=ais_hybrid&w=740&q=80">
+            <div class="overlay"><h3>Pizza</h3><p>Fast Food</p></div>        
+        </div>
+
+        <div class="gallery-item food southindian" onclick="openLightbox(3)">
+            <img src="https://srinivasabhavan.com/wp-content/uploads/2024/11/set-dosa.jpg">
+            <div class="overlay"><h3>Uttapam</h3><p>South Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food northindian" onclick="openLightbox(4)">
+            <img src="https://blog.swiggy.com/wp-content/uploads/2024/09/Image-9_Pav-Bhaji-1024x538.png">
+            <div class="overlay"><h3>Pav Bhaji</h3><p>North Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food fastfood" onclick="openLightbox(5)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJSXhQs5KBoHH229sjAD0VieVdpxUOep51XQ&s">
+            <div class="overlay"><h3>Burgur</h3><p>Fast Food</p></div>        
+        </div>
+
+        <div class="gallery-item food southindian" onclick="openLightbox(6)">
+            <img src="https://im.whatshot.in/img/2018/Mar/shutterstock-1008144799-1519978614.jpg?w=720&h=490&cc=1&wp=1">
+            <div class="overlay"><h3>Dosa</h3><p>South Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food northindian" onclick="openLightbox(7)">
+            <img src="https://www.thespruceeats.com/thmb/hqqNrNhIpqPqV2u0T0K-IUzUsEo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-cuisine-of-north-india-1957883-d32a933f506d43f59ac38a8eb956884a.jpg">
+            <div class="overlay"><h3>Panner</h3><p>North Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food fastfood" onclick="openLightbox(8)">
+            <img src="https://www.foodandwine.com/thmb/FLM1rvQ_LyJ-F7ZzfG6DuN1S5i8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Pasta-e-Ceci-FT-RECIPE0124-27dfb146e41a47c3b7f0bacc2ce46643.jpg">
+            <div class="overlay"><h3>Pasta</h3><p>Fast Food</p></div>     
+        </div>
+
+
+        <div class="gallery-item food southindian" onclick="openLightbox(9)">
+            <img src="https://static.vecteezy.com/system/resources/previews/071/434/640/non_2x/realistic-indian-medu-vada-served-with-sambar-and-chutney-traditional-south-indian-breakfast-photo.jpg">
+            <div class="overlay"><h3>Medu Vada</h3><p>South Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food northindian" onclick="openLightbox(10)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtYEh27YuBAoxud2yVxYqcpkhJJt1qOoAmZg&s">
+            <div class="overlay"><h3>Rajma Chawal</h3><p>North Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food fastfood" onclick="openLightbox(11)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDRMhmu9dNLttfbKUjjvNtHveAlXpPc-RHBw&s">
+            <div class="overlay"><h3>Noodles</h3><p>Fast Food</p></div>        
+        </div>
+
+        <div class="gallery-item food southindian" onclick="openLightbox(12)">
+            <img src="https://cdn1.foodviva.com/static-content/food-images/breakfast-recipes/rava-pongal/rava-pongal.jpg">
+            <div class="overlay"><h3>Pongal</h3><p>South Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food northindian" onclick="openLightbox(13)">
+            <img src="https://c.ndtvimg.com/2023-05/icruoj8o_paratha_650x400_21_May_23.jpg">
+            <div class="overlay"><h3>Aalu Pratha</h3><p>North Indian</p></div>        
+        </div>
+
+        <div class="gallery-item food fastfood" onclick="openLightbox(14)">
+            <img src="https://www.simplyrecipes.com/thmb/vT7RY7nH2J34hwV2OjISr1kO4ZU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Italian-Grilled-Cheese-Sandwich-LEAD-1-2-b00c3fa13440456daab6ccc149ac60c0.jpg">
+            <div class="overlay"><h3>Sandwiches</h3><p>Fast Food</p></div>        
+        </div>
+
+        <div class="gallery-item food sweet southindian" onclick="openLightbox(15)">
+            <img src="https://images.slurrp.com/prod/rich_article/h5a0di1uz9q.webp?impolicy=slurrp-20210601&width=880&height=500">
+            <div class="overlay"><h3>Mysore Pak</h3><p>South Indian Sweet</p></div>        
+        </div>
+
+        <div class="gallery-item food sweet northindian" onclick="openLightbox(16)">
+            <img src="https://pipingpotcurry.com/wp-content/uploads/2023/12/Gulab-Jamun-Recipe-Piping-Pot-Curry.jpg">
+            <div class="overlay"><h3>Gulab Jamoon</h3><p>North Indian Sweet</p></div>        
+        </div>
+
+        <div class="gallery-item food sweet fastfood" onclick="openLightbox(17)">
+            <img src="https://icecreambakery.in/wp-content/uploads/2024/12/Brownie-Recipe-with-Cocoa-Powder-1200x821.jpg">
+            <div class="overlay"><h3>Chocolate Brownie</h3><p>Fast Food Sweet</p></div>     
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
