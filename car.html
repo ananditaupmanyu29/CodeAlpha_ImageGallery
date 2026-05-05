@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobile Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Login Form -->
+<header class="top-header">
+    <a href="about.html" class="about-btn">About Us</a>
+    <a href="signin.html" class="signin-btn">Sign In</a>
+
+    <h1>My Vision Gallery</h1>
+</header>
+
+    <!-- Hero Section -->
+    <header class="hero06">
+        <h1>Automobile Gallery</h1>
+        <p>Exploring the new world</p>
+    </header>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="filterImages('car1', event)">Car</button>
+        <button onclick="filterImages('bike', event)">Bike</button>
+        <button onclick="filterImages('modified', event)">Modified</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <div class="gallery-item car car1" onclick="openLightbox(0)">
+            <img src="https://images.unsplash.com/photo-1607853554439-0069ec0f29b6?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Ym13JTIwbTN8ZW58MHx8MHx8fDA%3D">
+            <div class="overlay"><h3>BMW M3</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(1)">
+            <img src="https://getwallpapers.com/wallpaper/full/c/a/f/959836-download-free-sport-bikes-wallpapers-1920x1200-for-pc.jpg">
+            <div class="overlay"><h3>Yamaha YZF-R1</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(2)">
+            <img src="https://i.pinimg.com/736x/04/8c/4f/048c4f8132a2b3fae0be310ecd56741e.jpg">
+            <div class="overlay"><h3>BMW</h3><p>Modified</p></div>         
+        </div>
+
+        <div class="gallery-item car car1" onclick="openLightbox(3)">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/023/531/203/small/sport-racing-car-illustration-ai-generative-free-photo.jpg">
+            <div class="overlay"><h3>Ferrari</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(4)">
+            <img src="https://wallpapercave.com/wp/wp3161832.jpg">
+            <div class="overlay"><h3>Royal Enfield</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(5)">
+            <img src="https://wallpapercave.com/wp/wp2166165.jpg">
+            <div class="overlay"><h3>Hayabusa</h3><p>Modified</p></div>         
+        </div>
+
+        <div class="gallery-item car car1" onclick="openLightbox(6)">
+            <img src="https://content-hub.imgix.net/RMM6n6oxoTnO7pkW0ufCD/9455da25ecc1e7164966ddff8ea99b69/porsche_911_wallpapers_hero_desktop.jpg?w=2064">
+            <div class="overlay"><h3>Porsche 911</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(7)">
+            <img src="https://wallpapercat.com/w/full/a/f/f/881014-2000x1335-desktop-hd-ktm-rc-background.jpg">
+            <div class="overlay"><h3>KTM RC</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(8)">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgERJbSNsubXFBnZZ8H-fE7oG85VycX6q6w&s">
+            <div class="overlay"><h3>Lamborghini</h3><p>Modified</p></div>         
+        </div>
+
+
+        <div class="gallery-item car car1" onclick="openLightbox(9)">
+            <img src="https://bugatti-newsroom.imgix.net/8a123aa409bf4d3885d54f3ebdbb98a8/BUGATTI-World-Premiere-Presskit-Images-01-1.jpg">
+            <div class="overlay"><h3>Bugatti Tourbillon</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(10)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Kawasaki_Ninja_H2.jpg/500px-Kawasaki_Ninja_H2.jpg">
+            <div class="overlay"><h3>Kawasaki Ninja</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(11)">
+            <img src="https://mir-s3-cdn-cf.behance.net/projects/404/77bc6283641243.Y3JvcCwxMDA3LDc4OCwxOTcsMA.jpg">
+            <div class="overlay"><h3>Jawa 42</h3><p>Modified</p></div>         
+        </div>
+
+        <div class="gallery-item car car1" onclick="openLightbox(12)">
+            <img src="https://nelspruitford.co.za/wp-content/uploads/2025/08/mustang-overview-billboard-desktop.webp">
+            <div class="overlay"><h3>Mustang GT</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(13)">
+            <img src="https://acko-cms.ackoassets.com/Scrambler_Rizoma_4b0d8b0b42.jpg">
+            <div class="overlay"><h3>Ducati Scrambler</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(14)">
+            <img src="https://global.toyota/pages/news/images/2022/10/28/1700/001.jpg">
+            <div class="overlay"><h3>Supra GT4</h3><p>Modified</p></div>         
+        </div>
+
+        <div class="gallery-item car car1" onclick="openLightbox(15)">
+            <img src="https://wallpapercg.com/media/ts_2x/32315.webp">
+            <div class="overlay"><h3>Rolls Royce Phantom</h3><p>Car</p></div>         
+        </div>
+
+        <div class="gallery-item car bike" onclick="openLightbox(16)">
+            <img src="https://cdn.bikedekho.com/upload/standoutfeatures/670398c49784e.jpg">
+            <div class="overlay"><h3>TVS Apache</h3><p>Bike</p></div>         
+        </div>
+
+        <div class="gallery-item car modified" onclick="openLightbox(17)">
+            <img src="https://www.modifiedx.com/wp-content/uploads/2017/11/Modified-Royal-Enfield-Classic-350-orange.jpg">
+            <div class="overlay"><h3>Royal Enfield Classic 350</h3><p>Modified</p></div>         
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <img id="lightbox-img" src="">
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+     <!-- Footer -->
+    <footer>
+        My Vision Gallery | Designed for Professional Showcase | ananditaupmanyu29@gmail.com
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
